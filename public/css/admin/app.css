@@ -1,0 +1,134 @@
+:root {
+    --cta-color: #ea9556;
+    --cta-hover: #c57337;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+main {
+    /* flex: 1; would be enough but it looks bad in IE */
+    display: flex;
+    flex: 1 0 auto;
+    /*flex grow - flex shrink - flex basis*/
+
+}
+
+body {
+    font: 16px/1.5 sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+p {
+    margin-bottom: 1em;
+}
+a {
+    text-decoration: none;
+    color: var(--cta-color) ;
+}
+a:hover {
+    color: var(--cta-hover) ;
+}
+#imagen-login-container {
+    background-image: url('../../imagenes/fondos/login_background.webp');
+    background-position: left;
+    background-size: cover;
+}
+#logo-principal-lenador {
+    width: 100px;
+}
+#login-title {
+    font-weight: 500;
+}
+#login-subtitle {
+    font-weight: 300;
+}
+.input-login {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    margin: .25rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #727272;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color .15s
+}
+.input-login:focus {
+    color: #727272;
+    background-color: #fff;
+    border-color: #8d8d8d;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(200, 204, 210, 0.25);
+}
+.input-login:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.label-login {
+    font-size: .75rem;
+    font-weight: 400;
+}
+.button-login {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ced4da;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #333327;
+}
+
+
+/* Bootstrap sobreescrito */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+/* lg */
+@media (min-width: 992px) {
+    #nav-content{
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}

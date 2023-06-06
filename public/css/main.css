@@ -1,0 +1,247 @@
+:root {
+    --cta-color: #ea9556;
+    --cta-hover: #c57337;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkslategrey;
+}
+
+main {
+    /* flex: 1; would be enough but it looks bad in IE */
+    display: flex;
+    flex: 1 0 auto;
+    /*flex grow - flex shrink - flex basis*/
+
+}
+
+body {
+    font: 16px/1.5 sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4 {
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+p {
+    margin-bottom: 1em;
+}
+a {
+    text-decoration: none;
+    color: var(--cta-color) ;
+}
+a:hover {
+    color: var(--cta-hover) ;
+}
+.img-roomtype {
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+.img-gallery {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.size{
+    max-width: 270px;
+    max-height: 180px;
+    object-fit : cover;
+    object-position :center;
+}
+/*
+  * Header Web custom styles
+  */
+#header-web {
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-web.bg-transition {
+    transition: background-color 1s;
+}
+
+#header-web nav .navbar-nav {
+    align-items: center;
+}
+
+#header-web #logo-principal-lenador {
+    width: 100px;
+}
+#header-web #logo-principal-lenador-mobile {
+    width: 50px;
+}
+#header-web .radious-bottom-logo-container {
+    border-bottom-right-radius: 0.50rem !important;
+    border-bottom-left-radius: 0.50rem !important;
+}
+#header-web #nav-web.navbar-light .navbar-nav  .nav-link {
+    text-shadow: none;
+}
+#header-web #nav-web.navbar-dark .navbar-nav  .nav-link {
+    text-shadow: 3px 2px 4px black;
+}
+#header-web #hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagenes/fondos/fondo-hero-section-3.png');
+    background-position: 50% 40%;
+    background-size: cover;
+}
+#header-web #hero-section .texto-principal-container {
+    text-transform: uppercase;
+    text-align: center;
+    color: #f8f9fa;
+}
+#header-web #hero-section .texto-principal-container h1 {
+    font-size: 4rem;
+    text-shadow: 3px 2px 4px black;
+}
+#header-web #hero-section .texto-principal-container h4 {
+    text-shadow: 3px 2px 4px black;
+}
+#header-web #hero-section .texto-principal-container h5 {
+    font-size: 1.5rem;
+    text-shadow: 3px 2px 4px black;
+}
+
+#main-web {
+    /*background-image: url('../imagenes/fondos/wood-texture.png');*/
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+#main-web #video-introduccion-section .youtube-video {
+    width: 100%;
+    max-width: 560px;
+    max-height : 315px;
+    aspect-ratio: 16/9;
+}
+#main-web #habitaciones-section {
+    padding: 4rem 0;
+}
+#main-web #habitaciones-section .hab-section-hotel-img {
+    object-fit: cover;
+    object-position: center;
+    max-height: 400px;
+
+}
+#main-web #facilidades-section .facilidad {
+    max-width: 120px;
+    min-width: 120px;
+    text-align: center;
+    margin: .5rem;
+}
+#main-web #facilidades-section .facilidad p {
+    margin: .5rem;
+}
+#main-web #facilidades-section .icon {
+    width: 80px;
+    height: 80px;
+}
+#main-web #informacion-section {
+    min-height: 400px;
+    background-image: url('../imagenes/fondos/fondo-cofre.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+
+}
+#main-web #informacion-section .info-container {
+    width: 250px;
+    height: 250px;
+    background-color: #333327;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+}
+#main-web #informacion-section .info-container .icon {
+    width: 40px;
+    height: 40px;
+}
+#main-web #galeria-section img {
+    max-width:  320px;
+    margin: 1rem;
+}
+#footer-web {
+    background-image: url('../imagenes/fondos/pexels-alex-wolf-mx-14541421.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+.fondo-transparente {
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, .80);
+    min-width: 100%;
+    color: white;
+    padding: 2rem;
+}
+#footer-web ul {
+    list-style: none;
+    padding-left: 0;
+}
+#footer-web .logo {
+    margin-bottom: 22px;
+    height: 80px;
+    width: auto;
+}
+#footer-web .subfooter {
+    background-color: #0d0d0d;
+    color: #D9D9D9;
+    padding: .5rem 0;
+}
+/* Bootstrap sobreescrito */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+/* lg */
+@media (min-width: 992px) {
+    #nav-content{
+        width: 100% !important;
+    }
+    #main-web #video-introduccion-section .youtube-video {
+        height : 315px;
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+.bg-transparent {
+    background-color: #515d50c9!important;
+}

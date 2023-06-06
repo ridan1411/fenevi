@@ -1,0 +1,45 @@
+body {
+    background-color: #e2e2e2;
+}
+main {
+    background-color: #fff;
+    border-radius: 2rem;
+}
+#admin-sidebarMenu {
+    height: 100vh;
+    min-width: 300px;
+    transition: ease .1s;
+    overflow-y: auto;
+    font-size: 1rem;
+    order: 0;
+    border-radius: 2rem;
+}
+#admin-logo {
+    height: 100px;
+}
+#admin-menu-list {
+    border-radius: 1rem;
+    border: 1px solid #bec1c5!important;
+}
+#admin-header {
+    background-color: rgba(63, 43, 22, 0.7);
+    border-radius: 1rem;
+    margin: 8px;
+}
+#admin-nav-user-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #fff;
+    border-radius: 100px;
+    border: 5px solid rgba(63, 43, 22, 1);
+}
+.nav-item .nav-link.active {
+    background-color: rgba(140, 117, 91, 0.3);
+    border-radius: 1rem;
+}
+.nav-link {
+    color: #1A4035;
+    margin-bottom: .2rem;
+}
